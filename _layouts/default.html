@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta name="description" content="FOREVER - Responsive HTML Wedding Template">
+  <meta name="author" content="www.dethemes.com">
+  <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+  <title>{{ page.title }}</title>
+  <link rel="icon" href="images/favicon.jpg">
+  {% include styles.html %}
+</head>
+<body class="{{ page.body_class }}">
+
+    <!--PRELOADER-->
+    <div id="preloader">
+      <div class="alignment">
+        <div class="v-align center-middle"> 
+
+          <!-- LEFT HEART -->
+          <div class="heart-animation">                 
+            <i class="de-icon-heart"></i>
+          </div>
+
+          <!-- RIGHT HEART -->
+          <div class="heart-animation-reverse">
+            <i class="de-icon-heart"></i>
+          </div>     
+
+        </div>
+      </div>
+    </div> <!--END of PRELOADER-->
+
+    <div style="display: none;">
+      <!--SETTING-->
+      <div id="options-setting"> 
+        <div id="setting-button-wrapper">
+          <a id="setting-button" href="index-topbar-color.html#">
+            <div class="de-icon square light small-size inline"  style="border:1px solid #CCC;">
+              <i class="de-icon-cog"></i>
+            </div>
+          </a>
+        </div>
+        <div>
+          <h5>TEMPLATE COLOR</h5>
+          <div style="position:relative">
+            <a href="index-topbar-color.html#" id="coral"><span class="swatches">&nbsp;</span></a>
+            <a href="index-topbar-color.html#" id="coral-red"><span class="swatches">&nbsp;</span></a>
+            <a href="index-topbar-color.html#" id="lapis"><span class="swatches">&nbsp;</span></a>
+            <a href="index-topbar-color.html#" id="light-teal"><span class="swatches">&nbsp;</span></a>
+            <a href="index-topbar-color.html#" id="tan"><span class="swatches">&nbsp;</span></a>
+            <a href="index-topbar-color.html#" id="reset-color"><span>Reset</span></a>
+          </div>
+        </div>
+        <hr/>
+        <div>
+          <h5>BLOCK NAVBAR BACKGROUND</h5>
+          <div style="position:relative;">
+            <a href="index-topbar-color.html#" id="white-navbar"><span class="navbar-setting-button active">White</span></a>&nbsp;
+            <a href="index-topbar-color.html#" id="color-navbar"><span class="navbar-setting-button">Template Color</span></a>
+          </div>
+          <p class="setting-info"> For Transparent NavBar, this option will only works on sticky mode.</p>
+        </div>
+        <hr/>
+        <div>
+          <h5>PATTERN</h5>
+          <div style="position:relative;">
+            <a href="index-topbar-color.html#" id="pattern-1"><span class="pattern-setting-button">1</span></a>&nbsp;
+            <a href="index-topbar-color.html#" id="pattern-2"><span class="pattern-setting-button">2</span></a>&nbsp;
+            <a href="index-topbar-color.html#" id="pattern-3"><span class="pattern-setting-button">3</span></a>&nbsp;
+            <a href="index-topbar-color.html#" id="pattern-none"><span class="pattern-setting-button active">None</span></a>&nbsp;
+          </div>
+        </div>
+      </div>        
+      <!--END of SETTING-->
+    </div>
+    
+    {% include header.html %}
+
+    {{ content }}
+
+    {% if page.no_footer == nil %}
+      {% include footer.html %}
+    {% endif %}
+
+    {% include scripts.html %}
+
+</body>
+</html>
